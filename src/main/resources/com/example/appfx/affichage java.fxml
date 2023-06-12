@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  Copyright (c) 2015, 2019, Gluon and/or its affiliates.
+  All rights reserved. Use is subject to license terms.
+
+  This file is available and licensed under the following license:
+
+  Redistribution and use in source and binary forms, with or without
+  modification, are permitted provided that the following conditions
+  are met:
+
+  - Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
+  - Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in
+    the documentation and/or other materials provided with the distribution.
+  - Neither the name of Oracle Corporation nor the names of its
+    contributors may be used to endorse or promote products derived
+    from this software without specific prior written permission.
+
+  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+  "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+  LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+  A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+  OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+  SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+  LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+  DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+  THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+-->
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.appfx.HelloController">
+  <children>
+      <AnchorPane maxHeight="400.0" maxWidth="700.0" prefHeight="400.0" prefWidth="700.0">
+      <children>
+            <Label layoutX="114.0" layoutY="36.0" text="Logs" />
+            <Label layoutX="257.0" layoutY="36.0" text="Informations pour le CV" />
+            <Label layoutX="509.0" layoutY="36.0" text="Contacts" />
+
+
+            <ChoiceBox fx:id="contact_Display" layoutX="467.0" layoutY="70.0" prefHeight="20.0" prefWidth="150.0" />
+           
+
+            <Button fx:id="button_Contact_Display" layoutX="485.0" layoutY="110.0" mnemonicParsing="false" onAction="#buttonContactClick" text="afficher le contenu" />
+            <TextArea fx:id="contenu_Contact_Area" layoutX="455.0" layoutY="153.0" prefHeight="181.0" prefWidth="183.0" />
+            <TextField fx:id="experience_Area" layoutX="246.0" layoutY="83.0" />
+            <TextField fx:id="presentation_Area" layoutX="246.0" layoutY="131.0" />
+            <TextField fx:id="competences_Area" layoutX="246.0" layoutY="175.0" />
+            <TextField fx:id="diplomes_Area" layoutX="246.0" layoutY="222.0" />
+            <Label layoutX="246.0" layoutY="62.0" text="Experience" />
+            <Label layoutX="246.0" layoutY="114.0" text="Presentation" />
+            <Label layoutX="246.0" layoutY="155.0" text="Compétences" />
+            <Label layoutX="246.0" layoutY="205.0" text="Diplomes" />
+            <Button fx:id="button_Modif_CV" layoutX="287.0" layoutY="260.0" mnemonicParsing="false" onAction="#buttonModifCVClick" text="Modifier" />
+            <Line endX="34.0" endY="342.0" layoutX="196.0" layoutY="35.0" startX="34.0" startY="-35.0" />
+            <Line endX="34.0" endY="336.0" layoutX="401.0" layoutY="40.0" startX="34.0" startY="-40.0" />
+            <TextArea fx:id="log_Area" layoutX="14.0" layoutY="88.0" prefHeight="200.0" prefWidth="200.0" />
+      </children>
+    </AnchorPane>
+  </children>
+</VBox>
